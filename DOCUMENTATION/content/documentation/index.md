@@ -1991,6 +1991,21 @@ To install MyCLI in the MariaDB container
 
 
 <br>
+<a name="Install-MyCLI-for-MySQL"></a>
+## Install MyCLI for MySQL
+
+To install MyCLI in the MySQL container
+
+1 - Open the `.env` file
+
+2 - Search for the `MYSQL_INSTALL_MYCLI` argument under the MySQL Container and set it to `true`
+
+3 - Re-build the container `docker-compose build mysql`
+
+
+
+
+<br>
 <a name="phpstorm-debugging"></a>
 ## PHPStorm Debugging Guide
 Remote debug Laravel web and phpunit tests.

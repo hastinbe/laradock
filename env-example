@@ -284,6 +284,7 @@ MARIADB_PASSWORD=secret
 MARIADB_PORT=3306
 MARIADB_ROOT_PASSWORD=root
 MARIADB_ENTRYPOINT_INITDB=./mariadb/docker-entrypoint-initdb.d
+MARIADB_INSTALL_MYCLI=false
 
 ### POSTGRES ##############################################
 

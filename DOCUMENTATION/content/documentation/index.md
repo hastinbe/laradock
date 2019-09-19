@@ -1973,6 +1973,23 @@ YAML PHP extension allows you to easily parse and create YAML structured data. I
 4 - Re-build the container `docker-compose build php-fpm`<br>
 
 
+
+
+<br>
+<a name="Install-MyCLI-for-MariaDB"></a>
+## Install MyCLI for MariaDB
+
+To install MyCLI in the MariaDB container
+
+1 - Open the `.env` file
+
+2 - Search for the `MARIADB_INSTALL_MYCLI` argument under the MariaDB Container and set it to `true`
+
+3 - Re-build the container `docker-compose build mariadb`
+
+
+
+
 <br>
 <a name="phpstorm-debugging"></a>
 ## PHPStorm Debugging Guide

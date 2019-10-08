@@ -21,10 +21,12 @@ RUN apk --update add wget \
   cyrus-sasl-dev \
   libgsasl-dev \
   supervisor \
-  procps
+  procps \
+  libpng \
+  libpng-dev
 
-RUN docker-php-ext-install mysqli mbstring pdo pdo_mysql tokenizer xml pcntl
-RUN pecl channel-update pecl.php.net && pecl install memcached mcrypt-1.0.1 mongodb && docker-php-ext-enable memcached mongodb
+RUN docker-php-ext-install mysqli mbstring pdo pdo_mysql tokenizer xml pcntl gd
+RUN pecl channel-update pecl.php.net && pecl install memcached mcrypt-1.0.1 mongodb && docker-php-ext-enable memcached mongodb gd
 
 #Install BCMath package:
 ARG INSTALL_BCMATH=false

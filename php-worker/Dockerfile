@@ -26,7 +26,7 @@ RUN apk --update add wget \
   libpng-dev
 
 RUN docker-php-ext-install mysqli mbstring pdo pdo_mysql tokenizer xml pcntl gd
-RUN pecl channel-update pecl.php.net && pecl install memcached mcrypt-1.0.1 mongodb redis && docker-php-ext-enable memcached mongodb redis
+RUN pecl channel-update pecl.php.net && pecl install memcached mcrypt-1.0.1 mongodb redis && docker-php-ext-enable memcached mongodb redis gd
 
 # Add a non-root user:
 ARG PUID=1000
